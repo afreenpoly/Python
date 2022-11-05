@@ -12,16 +12,11 @@ tim.penup()
 x=-250
 y=-200
 tim.setpos(x,y)
-tim.pendown()
 for i in range (10):
     for i in range (10):
         color=random.choice(colour_list)
         tim.dot(20,color)
-        tim.penup()
         tim.forward(50)
-        tim.pendown()
-    tim.penup()
     y+=50
     tim.setpos(x,y)
-
 myscreen.exitonclick()
